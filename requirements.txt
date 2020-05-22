@@ -1,0 +1,2 @@
+pymongo==3.10.1
+sphinx==3.0.3
