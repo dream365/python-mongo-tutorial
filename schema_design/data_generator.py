@@ -1,4 +1,4 @@
-import db_utils as dbu
+from utils import db_utils as dbu
 import datetime
 
 dbu.init()
