@@ -46,7 +46,7 @@ sample_product_detail = {
 
 sample_product = {
     "_id": "2001",
-    "slug": "wheelbarrow-9092",
+    "slug": "wheel-barrow-9092",
     "sku": "9092",
     "name": "Extra Large Wheelbarrow",
     "description": "Heavy duty wheelbarrow...",
@@ -84,7 +84,7 @@ product_collection.insert_one(sample_product)
 
 sample_product2 = {
     "_id": "2002",
-    "slug": "wheelbarrow-9093",
+    "slug": "wheel-barrow-9093",
     "sku": "9093",
     "name": "Extra Small Wheelbarrow",
     "description": "Light duty wheelbarrow...",
