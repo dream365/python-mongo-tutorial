@@ -1,6 +1,6 @@
-##Mongodb tutorial with python language
+## Mongodb tutorial with python language
 ---
-###Schema Design
+### Schema Design
 - 스키마 설계는 *DB 시스템의 기능*과 *데이터의 특성*, *애플리케이션의 요구사항*이 주어졌을 떄 데이터에 대한 *최적의 표현*을 찾아내는 과정
 
 - 데이터 모델 결정위한 여러가지 고려 요소들
@@ -13,7 +13,7 @@
 
 - 좋은 설계는 애플리케이션 확장과 성능을 고려한 실험과 반복으로부터 나옴    
 
-###Data Model Design
+### Data Model Design
 - MongoDB에서는 *객체-관계 매핑 툴(ORM)*에 대한 필요성이 상대적으로 낮음
     - *도규먼트*가 이미 *객체*와 같은 표현
     - 사용하기 쉬운 드라이버가 상위 계층 인터페이스 제공
