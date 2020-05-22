@@ -1,6 +1,6 @@
 ## Mongodb tutorial with python language
 ---
-- ###[**Document Based Data**](schema_design/document_based_data.md)
+1. [**Document Based Data**](schema_design/document_based_data.md)
 
-- ###[**Make Query**](query/make_query.md)
+2. [**Make Query**](query/make_query.md)
 
