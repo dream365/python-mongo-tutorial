@@ -20,7 +20,10 @@ category_collection.insert_one(home_category)
 outdoors_category = {
     "_id": "1002",
     "name": "Outdoors",
-    "slug": "outdoors"
+    "slug": "outdoors",
+    "description": "Outdoor galore!",
+    "parent_id": home_category["_id"],
+    "ancestors": [home_category]
 }
 
 category_collection.insert_one(outdoors_category)
@@ -290,7 +293,6 @@ review2 = {
 }
 
 review_collection.insert_one(review2)
-
 
 review3 = {
     "_id": "5003",

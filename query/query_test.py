@@ -50,6 +50,15 @@ def paging_test():
             pprint.pprint(review)
             print('===============================================================================')
 
+def null_field_test():
+    categories = category_collection.find({"parent_id": None})
+
+    print('===============================================================================')
+    print('None Parent Category')
+    print('===============================================================================')
+    for category in categories:
+        pprint.pprint(category)
+        print('===============================================================================')
 
 if __name__ == "__main__":
-    paging_test()
+    null_field_test()
