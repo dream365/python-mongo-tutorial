@@ -95,10 +95,10 @@ product_collection.insert_one(sample_product)
 
 sample_product2 = {
     "_id": "2002",
-    "slug": "wheel-barrow-9093",
+    "slug": "lawn-trimmer-9093",
     "sku": "9093",
-    "name": "Extra Small Wheelbarrow",
-    "description": "Light duty wheelbarrow...",
+    "name": "Lawn Trimmer",
+    "description": "Light law trimmer...",
     "details": sample_product_detail,
     "total_reviews": 4,
     "average_review": 4.5,
@@ -120,13 +120,13 @@ sample_product2 = {
             "end": datetime.datetime(year=2010, month=4, day=16)
         }
     ],
-    "primary_category": gardening_category["_id"],
+    "primary_category": lawn_trimmer_category["_id"],
     "category_ids": [
-        gardening_category["_id"],
+        lawn_trimmer_category["_id"],
         outdoors_category["_id"]
     ],
-    "main_cat_id": gardening_category["_id"],
-    "tags": ["tools", "gardening", "soil"]
+    "main_cat_id": lawn_trimmer_category["_id"],
+    "tags": ["tools", "trimmer", "lawn"]
 }
 
 product_collection.insert_one(sample_product2)
