@@ -271,11 +271,10 @@ review2 = {
     "rating": 3.5,
     "user_id": user["_id"],
     "username": "dgreenthumb",
-    "helpful_votes": 3,
+    "helpful_votes": 2,
     "voter_ids": [
         user["_id"],
-        user2["_id"],
-        user3["_id"]
+        user2["_id"]
     ]
 }
 
@@ -291,10 +290,9 @@ review3 = {
     "rating": 2,
     "user_id": user["_id"],
     "username": "dgreenthumb",
-    "helpful_votes": 2,
+    "helpful_votes": 1,
     "voter_ids": [
-        user["_id"],
-        user2["_id"]
+        user["_id"]
     ]
 }
 
