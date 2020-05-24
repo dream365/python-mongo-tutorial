@@ -8,6 +8,7 @@ user_collection = dbu.get_collection('user')
 order_collection = dbu.get_collection('order')
 review_collection = dbu.get_collection('review')
 
+
 def find_query_test():
     review_collection.create_index([('product_id', pymongo.ASCENDING)])
 
@@ -30,5 +31,25 @@ def find_query_test():
         pprint.pprint(review)
         print('===============================================================================')
 
+
+def paging_test():
+    sample_product = product_collection.find_one({"slug": "wheel-barrow-9092"})
+    reviews_count = review_collection.count_documents({"product_id": sample_product['_id']})
+    num_item_per_page = 2
+    total_page = int(reviews_count / num_item_per_page) if reviews_count % num_item_per_page == 0 else int(reviews_count / num_item_per_page) + 1
+
+    print('===============================================================================')
+    for num_page in range(total_page):
+        print('Review Page', num_page + 1)
+        print('===============================================================================')
+        reviews = review_collection.find({"product_id": sample_product['_id']}) \
+            .skip((num_page) * num_item_per_page) \
+            .limit(num_item_per_page) \
+            .sort([('rating', pymongo.DESCENDING)])
+        for review in reviews:
+            pprint.pprint(review)
+            print('===============================================================================')
+
+
 if __name__ == "__main__":
-    find_query_test()
+    paging_test()
