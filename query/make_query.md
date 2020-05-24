@@ -17,3 +17,11 @@
 - skip, limit, sort function을 이용하여 Pagination을 구현
     - Page 1 : db.example.skip(0).limit(5).sort({'A': 1}) (A를 기준 오름차순 정렬한뒤 Item 0 ~ Item 4)를 반환
     - Page 2 : db.example.skip(5).limit(5).sort({'A': 1}) (A를 기준 오름차순 정렬한뒤 Item 5 ~ Item 9)를 반환
+    
+### Projection
+- find 쿼리로 조회시 모든 필드가 필요없는 상황이 있음 (i.e. 회원 존재 여부 체크 시 name, password로 유저의 존재만 알면 되기때문에 모든 필드가 필요가 없음)
+
+- find 쿼리 시 인수 하나를 더 추가하여 프로젝션을 수행할 수 있음
+    - db.example.findOne({'username' : 'sewon', 'password' : 'temp'}, {'_id': 1})
+    - 인수에 필요한 필드의 해시값을 1로 설정하여 쿼리
+

@@ -136,11 +136,11 @@ product_collection.insert_one(sample_product2)
 
 user = {
     "_id": "3001",
-    "username": "kbanker",
-    "email": "kylebanker@gmail.com",
+    "username": "kbanker1",
+    "email": "kylebanker1@gmail.com",
     "first_name": "Kyle",
     "last_name": "Banker",
-    "hashed_password": "bd1cfa194c3a603e7186780824b04419",
+    "hashed_password": "bd1cfa194c3a603e7186780824b044191",
     "addresses": [
         {
             "name": "home",
@@ -167,11 +167,11 @@ user = {
 
 user2 = {
     "_id": "3002",
-    "username": "kbanker",
-    "email": "kylebanker@gmail.com",
+    "username": "kbanker2",
+    "email": "kylebanker2@gmail.com",
     "first_name": "Kyle",
     "last_name": "Banker",
-    "hashed_password": "bd1cfa194c3a603e7186780824b04419",
+    "hashed_password": "bd1cfa194c3a603e7186780824b044192",
     "addresses": [
         {
             "name": "home",
@@ -198,11 +198,11 @@ user2 = {
 
 user3 = {
     "_id": "3003",
-    "username": "kbanker",
-    "email": "kylebanker@gmail.com",
+    "username": "kbanker3",
+    "email": "kylebanker3@gmail.com",
     "first_name": "Kyle",
     "last_name": "Banker",
-    "hashed_password": "bd1cfa194c3a603e7186780824b04419",
+    "hashed_password": "bd1cfa194c3a603e7186780824b044193",
     "addresses": [
         {
             "name": "home",

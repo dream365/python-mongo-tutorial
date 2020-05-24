@@ -71,5 +71,19 @@ def null_field_test():
         pprint.pprint(category)
         print('===============================================================================')
 
+def project_test():
+    user_with_full_field = user_collection.find_one({"username": "kbanker1", "hashed_password": "bd1cfa194c3a603e7186780824b044191"})
+    user_with_only_id_field = user_collection.find_one({"username": "kbanker1", "hashed_password": "bd1cfa194c3a603e7186780824b044191"}, {'_id': 1})
+
+    print('===============================================================================')
+    print('User with Full Field')
+    print('===============================================================================')
+    pprint.pprint(user_with_full_field)
+
+    print('===============================================================================')
+    print('User with Only Id Field')
+    print('===============================================================================')
+    pprint.pprint(user_with_only_id_field)
+
 if __name__ == "__main__":
-    sibling_category_test()
+    project_test()
