@@ -50,6 +50,17 @@ def paging_test():
             pprint.pprint(review)
             print('===============================================================================')
 
+def sibling_category_test():
+    outdoor_category = category_collection.find_one({"slug": "outdoors"})
+    sibling_categories = category_collection.find({"parent_id": outdoor_category['_id']})
+
+    print('===============================================================================')
+    print('Sibling Category(Parent : outdoors)')
+    print('===============================================================================')
+    for category in sibling_categories:
+        pprint.pprint(category)
+        print('===============================================================================')
+
 def null_field_test():
     categories = category_collection.find({"parent_id": None})
 
@@ -61,4 +72,4 @@ def null_field_test():
         print('===============================================================================')
 
 if __name__ == "__main__":
-    null_field_test()
+    sibling_category_test()
