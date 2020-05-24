@@ -261,3 +261,41 @@ review = {
 }
 
 review_collection.insert_one(review)
+
+review2 = {
+    "_id": "5002",
+    "product_id": sample_product["_id"],
+    "date": datetime.datetime(year=2010, month=5, day=7),
+    "title": "Amazing",
+    "text": "Has a squeaky wheel, but still a darn good wheelbarrow.",
+    "rating": 3.5,
+    "user_id": user["_id"],
+    "username": "dgreenthumb",
+    "helpful_votes": 3,
+    "voter_ids": [
+        user["_id"],
+        user2["_id"],
+        user3["_id"]
+    ]
+}
+
+review_collection.insert_one(review2)
+
+
+review3 = {
+    "_id": "5003",
+    "product_id": sample_product["_id"],
+    "date": datetime.datetime(year=2010, month=5, day=9),
+    "title": "Amazing",
+    "text": "Has a squeaky wheel, but still a darn good wheelbarrow.",
+    "rating": 2,
+    "user_id": user["_id"],
+    "username": "dgreenthumb",
+    "helpful_votes": 2,
+    "voter_ids": [
+        user["_id"],
+        user2["_id"]
+    ]
+}
+
+review_collection.insert_one(review3)
