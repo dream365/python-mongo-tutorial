@@ -36,6 +36,17 @@ gardening_category = {
 
 category_collection.insert_one(gardening_category)
 
+lawn_trimmer_category = {
+    "_id": "1004",
+    "slug": "lawn-trimmers",
+    "name": "Lawn Trimmers",
+    "description": "Lawn trimmers galore!",
+    "parent_id": outdoors_category["_id"],
+    "ancestors": [home_category, outdoors_category]
+}
+
+category_collection.insert_one(lawn_trimmer_category)
+
 sample_product_detail = {
     "weight": 45,
     "weight_units": "lbs",
